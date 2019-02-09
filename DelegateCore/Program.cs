@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
-namespace Delegate
+namespace DelegateCore
 {
     class Program
     {
@@ -13,8 +9,6 @@ namespace Delegate
 
         static void Main(string[] args)
         {
-            var externalData = "some external data";
-
             Console.WriteLine("Hello World!");
 
             AddictionDelegate add = Add;
@@ -23,11 +17,10 @@ namespace Delegate
 
             IAsyncResult result;
 
-            result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), externalData);
+             result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), null);
 
             var operationResult = add.EndInvoke(result);
 
-            Console.ReadKey();
         }
 
         static int Add(int a, int b)
@@ -38,7 +31,6 @@ namespace Delegate
 
         static void AddComplete(IAsyncResult ar)
         {
-            Console.WriteLine($"Write {ar.AsyncState}");
             Console.WriteLine("Executed on thread (AddComplete) ThreadId: " + Thread.CurrentThread.ManagedThreadId);
         }
     }
