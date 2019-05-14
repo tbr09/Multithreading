@@ -23,6 +23,7 @@ namespace Delegate
 
             IAsyncResult result;
 
+            //as you see we dont manually create threads here, ThreadPool take care of this
             result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), externalData);
 
             var operationResult = add.EndInvoke(result);

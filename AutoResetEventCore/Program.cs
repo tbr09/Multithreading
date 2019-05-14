@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace AutoResetEvent
+namespace AutoResetEventCore
 {
     class Program
     {

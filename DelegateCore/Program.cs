@@ -9,6 +9,8 @@ namespace DelegateCore
 
         static void Main(string[] args)
         {
+            var externalData = "some external data";
+
             Console.WriteLine("Hello World!");
 
             AddictionDelegate add = Add;
@@ -17,10 +19,11 @@ namespace DelegateCore
 
             IAsyncResult result;
 
-             result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), null);
+             result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), externalData);
 
             var operationResult = add.EndInvoke(result);
 
+            Console.ReadKey();
         }
 
         static int Add(int a, int b)
@@ -31,6 +34,7 @@ namespace DelegateCore
 
         static void AddComplete(IAsyncResult ar)
         {
+            Console.WriteLine($"Write {ar.AsyncState}");
             Console.WriteLine("Executed on thread (AddComplete) ThreadId: " + Thread.CurrentThread.ManagedThreadId);
         }
     }

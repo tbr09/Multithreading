@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{609E9BDC-BC73-48E5-BCF3-21507C432236}</ProjectGuid>
+    <ProjectGuid>{36FEC3EB-9C52-43B1-AF1E-75DB025914C6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ManualSecondThread</RootNamespace>
-    <AssemblyName>ManualSecondThread</AssemblyName>
+    <RootNamespace>TaskSurprise</RootNamespace>
+    <AssemblyName>TaskSurprise</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

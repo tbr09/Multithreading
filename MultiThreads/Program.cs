@@ -27,6 +27,7 @@ namespace MultiThreads
 
             foreach (Thread t in threads)
                 t.Start();
+
             Console.ReadLine();
         }
 
@@ -39,12 +40,13 @@ namespace MultiThreads
             {
                 threads[i] = new Thread(new ThreadStart(p.PrintNumbers))
                 {
-                    Name = $"TTread #{i}"
+                    Name = $"Thread #{i}"
                 };
             }
 
             foreach (Thread t in threads)
                 t.Start();
+
             Console.ReadLine();
         }
 
@@ -63,6 +65,7 @@ namespace MultiThreads
 
             foreach (Thread t in threads)
                 t.Start();
+
             Console.ReadLine();
         }
     }

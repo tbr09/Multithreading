@@ -1,23 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2DelegateCore", "DelegateCore\2DelegateCore.csproj", "{015459DF-4E79-44D9-9546-0911AF639771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02DelegateCore", "DelegateCore\02DelegateCore.csproj", "{015459DF-4E79-44D9-9546-0911AF639771}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1Delegate", "Delegate\1Delegate.csproj", "{C895D16A-5AA2-44FD-B727-54B7E5AD080D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01Delegate", "Delegate\01Delegate.csproj", "{C895D16A-5AA2-44FD-B727-54B7E5AD080D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3ThreadingNamespace", "ThreadingNamespace\3ThreadingNamespace.csproj", "{6261697A-4E7B-4471-819B-68095A485EBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03ThreadingNamespace", "ThreadingNamespace\03ThreadingNamespace.csproj", "{6261697A-4E7B-4471-819B-68095A485EBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4ManualSecondThread", "ManualSecondThread\4ManualSecondThread.csproj", "{609E9BDC-BC73-48E5-BCF3-21507C432236}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04ManualSecondThread", "ManualSecondThread\04ManualSecondThread.csproj", "{609E9BDC-BC73-48E5-BCF3-21507C432236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5AutoResetEvent", "AutoResetEvent\5AutoResetEvent.csproj", "{6760F2DA-92A0-4349-83DD-F300171DBEA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05AutoResetEvent", "AutoResetEvent\05AutoResetEvent.csproj", "{6760F2DA-92A0-4349-83DD-F300171DBEA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6MultiThreads", "MultiThreads\6MultiThreads.csproj", "{3C6AF058-B2CB-4FBC-B2D2-B9A8478CC683}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06MultiThreads", "MultiThreads\06MultiThreads.csproj", "{3C6AF058-B2CB-4FBC-B2D2-B9A8478CC683}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7UIThread", "UIThread\7UIThread.csproj", "{F190AC0A-71FD-4E9B-A323-BC8D270EE6D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07UIThread", "UIThread\07UIThread.csproj", "{F190AC0A-71FD-4E9B-A323-BC8D270EE6D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8CancellationToken", "CancellationToken\8CancellationToken.csproj", "{F7E10292-DEE8-47B3-B6FF-8BE47EAF4594}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08CancellationToken", "CancellationToken\08CancellationToken.csproj", "{F7E10292-DEE8-47B3-B6FF-8BE47EAF4594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09ParallelInvoke", "ParallelInvoke\09ParallelInvoke.csproj", "{1B62A8D4-469A-4D5C-8AAD-B4254925455F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10SynchronizationContextExample", "SynchronizationContextExample\10SynchronizationContextExample.csproj", "{6C5CF3B8-A7F4-4FE6-9944-9C540750F134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11DeadlockWithWait", "DeadlockWithWait\11DeadlockWithWait.csproj", "{AB4E7C4C-71D9-49C3-8C44-5929C9F9389E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskSurprise", "TaskSurprise\TaskSurprise.csproj", "{36FEC3EB-9C52-43B1-AF1E-75DB025914C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBasics", "TaskBasics\TaskBasics.csproj", "{783B1E56-4DC0-4080-B4BD-70FE3269D58A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03ThreadingNamespaceCore", "ThreadingNamespaceCore\03ThreadingNamespaceCore.csproj", "{94B238AB-7404-4608-AE7A-22356EAD579B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04ManualSecondThreadCore", "ManualSecondThreadCore\04ManualSecondThreadCore.csproj", "{8DBED765-E0B1-4A60-904C-EA3D9EE4C4DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05AutoResetEventCore", "AutoResetEventCore\05AutoResetEventCore.csproj", "{9165A8A8-0F73-41FA-B256-19F810523D03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +73,38 @@ Global
 		{F7E10292-DEE8-47B3-B6FF-8BE47EAF4594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7E10292-DEE8-47B3-B6FF-8BE47EAF4594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7E10292-DEE8-47B3-B6FF-8BE47EAF4594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B62A8D4-469A-4D5C-8AAD-B4254925455F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B62A8D4-469A-4D5C-8AAD-B4254925455F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B62A8D4-469A-4D5C-8AAD-B4254925455F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B62A8D4-469A-4D5C-8AAD-B4254925455F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5CF3B8-A7F4-4FE6-9944-9C540750F134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5CF3B8-A7F4-4FE6-9944-9C540750F134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5CF3B8-A7F4-4FE6-9944-9C540750F134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5CF3B8-A7F4-4FE6-9944-9C540750F134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4E7C4C-71D9-49C3-8C44-5929C9F9389E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4E7C4C-71D9-49C3-8C44-5929C9F9389E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4E7C4C-71D9-49C3-8C44-5929C9F9389E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4E7C4C-71D9-49C3-8C44-5929C9F9389E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36FEC3EB-9C52-43B1-AF1E-75DB025914C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FEC3EB-9C52-43B1-AF1E-75DB025914C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FEC3EB-9C52-43B1-AF1E-75DB025914C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FEC3EB-9C52-43B1-AF1E-75DB025914C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783B1E56-4DC0-4080-B4BD-70FE3269D58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783B1E56-4DC0-4080-B4BD-70FE3269D58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783B1E56-4DC0-4080-B4BD-70FE3269D58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783B1E56-4DC0-4080-B4BD-70FE3269D58A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B238AB-7404-4608-AE7A-22356EAD579B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B238AB-7404-4608-AE7A-22356EAD579B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B238AB-7404-4608-AE7A-22356EAD579B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B238AB-7404-4608-AE7A-22356EAD579B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBED765-E0B1-4A60-904C-EA3D9EE4C4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBED765-E0B1-4A60-904C-EA3D9EE4C4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBED765-E0B1-4A60-904C-EA3D9EE4C4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBED765-E0B1-4A60-904C-EA3D9EE4C4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9165A8A8-0F73-41FA-B256-19F810523D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9165A8A8-0F73-41FA-B256-19F810523D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9165A8A8-0F73-41FA-B256-19F810523D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9165A8A8-0F73-41FA-B256-19F810523D03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
