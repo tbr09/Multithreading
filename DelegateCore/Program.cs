@@ -9,6 +9,11 @@ namespace DelegateCore
 
         static void Main(string[] args)
         {
+            Example1();
+        }
+
+        private static void Example1()
+        {
             var externalData = "some external data";
 
             Console.WriteLine("Hello World!");
@@ -19,7 +24,7 @@ namespace DelegateCore
 
             IAsyncResult result;
 
-             result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), externalData);
+            result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), externalData);
 
             var operationResult = add.EndInvoke(result);
 
