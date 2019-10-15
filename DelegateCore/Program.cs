@@ -24,6 +24,7 @@ namespace DelegateCore
 
             IAsyncResult result;
 
+            // .NET Core throw exception, because 
             result = add.BeginInvoke(10, 5, new AsyncCallback(AddComplete), externalData);
 
             var operationResult = add.EndInvoke(result);

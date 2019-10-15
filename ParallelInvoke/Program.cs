@@ -17,10 +17,15 @@ namespace ParallelInvoke
                 },
                 () =>
                 {
+                    SomeLongOperation();
+                },
+                () =>
+                {
                     OtherLongOperation();
                 });
 
 
+            Console.WriteLine("End of program.");
             Console.ReadKey();
         }
         

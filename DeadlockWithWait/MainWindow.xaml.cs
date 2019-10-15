@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -11,23 +12,32 @@ namespace DeadlockWithWait
             InitializeComponent();
         }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        public void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            //MakeSomethingAsync().Wait();
-
-            var taskWithData = MakeSomethingWithDataAsync().Result;
+            Console.WriteLine($"Context: {Thread.CurrentContext.ContextID}");
+            var unSafeResult = UnSafeAsyncMethod().Result;
+            Console.WriteLine($"Context: {Thread.CurrentContext.ContextID}");
         }
 
-        private async Task<string> MakeSomethingWithDataAsync()
+        public async Task<string> UnSafeAsyncMethod()
         {
-            await Task.Delay(2000).ConfigureAwait(false);
-            return "Some data returned after async operation";
+            Console.WriteLine($"Context: {Thread.CurrentContext.ContextID}");
+            var result = await FetchDataAsync();
+            return result;
         }
 
-        private async Task MakeSomethingAsync()
+        public async Task<string> SafeAsyncMethod()
         {
-            await Task.Delay(2000).ConfigureAwait(false);
-            Console.WriteLine("Some data returned after async operation");
+            Console.WriteLine($"Context: {Thread.CurrentContext.ContextID}");
+            var result = await FetchDataAsync().ConfigureAwait(false);
+            return result;
+        }
+
+
+        public async Task<string> FetchDataAsync()
+        {
+            await Task.Delay(100);
+            return "Some data";
         }
     }
 }

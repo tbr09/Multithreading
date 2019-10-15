@@ -11,8 +11,9 @@ namespace ManualSecondThread
     {
         static void Main(string[] args)
         {
-            Example1();
+            //Example1();
             //Example2();
+            Example3();
         }
 
         static void Example1()
@@ -52,5 +53,38 @@ namespace ManualSecondThread
 
             Console.ReadKey();
         }
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Thread thread1 = new Thread(ThreadWork.DoWork);
+        thread1.Start();
+
+        ThreadPool.QueueUserWorkItem(ThreadWork.DoWorkInThreadPool);
+    }
+}
+
+
+public class ThreadWork
+{
+    public static void DoWorkInThreadPool(object stateInfo)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine("Hello from threadpool...");
+            Thread.Sleep(100);
+        }
+    }
+}
+        public static void DoWork()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Working thread...");
+                Thread.Sleep(100);
+            }
+        }
+
     }
 }
